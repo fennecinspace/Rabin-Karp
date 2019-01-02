@@ -8,4 +8,5 @@ if __name__ == '__main__':
     # text = 'Hello World How Are You Doing How  HowToday ?'
     text = open(SAMPLE_FILE, 'r').read()
     to_find = 'how' 
-    rabin_karp(to_find, text)
+    l = rabin_karp(to_find, text)
+    print(l)
