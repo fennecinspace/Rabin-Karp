@@ -117,6 +117,6 @@ class Rabin:
             if pattern_hash == sub_text_hash:
                 # checking if strings match
                 if self.pattern == self.text[i: i + self.pattern_len]:
-                    print('Pattern "{}" matched at {}'.format(self.pattern, i))
+                    # print('Pattern "{}" matched at {}'.format(self.pattern, i))
                     self.result += [i]
         
