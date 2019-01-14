@@ -1,5 +1,5 @@
 import os
-SAMPLE_FILE = os.path.join((os.path.abspath(os.path.dirname(__file__))), '..', 'sample.txt')
+SAMPLE_FILE = os.path.join((os.path.abspath(os.path.dirname(__file__))), 'sample.txt')
 
 alpha_len = 2097152 # nb of representable characters in utf-8
 
@@ -33,7 +33,6 @@ def search(pattern, text, prime = 101):
 
     # hash value of pattern
     pattern_hash = calc_hash(pattern, prime)
-
     # first window hash
     win_hash = calc_hash(text[:pl], prime)
     
